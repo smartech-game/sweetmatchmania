@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Sweet Match Mania</title>
+<style>
+  :root {
+    --ground: #ffffff;
+    --ink: #21181d;
+    --ink-2: #5a4c53;
+    --rule: #ecdfe4;
+    --accent: #c2456f;
+    --surface: #fdf4f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #171216;
+      --ink: #f2e8ed;
+      --ink-2: #c0b0b8;
+      --rule: #362a31;
+      --accent: #f291b3;
+      --surface: #21181e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 {
+    font-size: clamp(1.7rem, 5vw, 2.3rem);
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.015em;
+  }
+  .sub { color: var(--ink-2); margin: 0 0 0.35rem; }
+  .updated { color: var(--ink-2); font-size: 0.9rem; margin: 0 0 2.5rem; }
+  h2 {
+    font-size: 1.2rem;
+    margin: 2.5rem 0 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    letter-spacing: -0.01em;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 0.5rem; }
+  p, li { color: var(--ink-2); }
+  p { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { color: var(--ink); }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  .box {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 1.1rem 1.3rem;
+    margin: 0 0 1rem;
+  }
+  .box p:last-child { margin-bottom: 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    background: var(--surface);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.6rem 0.7rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+    color: var(--ink-2);
+  }
+  th { color: var(--ink); font-weight: 600; }
+  .scroller { overflow-x: auto; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-2);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy</h1>
+  <p class="sub">Sweet Match Mania — <code>com.tylcham.sweetmatchmania</code></p>
+  <p class="updated">Last updated: 13 August 2026</p>
+
+  <p>This Privacy Policy explains how <strong>Smartech</strong> ("we", "us") handles information in connection with the mobile application <strong>Sweet Match Mania</strong> (the "App"). We are committed to protecting your privacy and to being transparent about the data the App processes.</p>
+
+  <div class="box">
+    <p><strong>In short:</strong> the App never asks for your name, email address, phone number or any information that directly identifies you. It does create an <em>anonymous</em> account so your rewards and notifications work across sessions, and it includes advertising, analytics and purchase services from third parties that collect device identifiers such as your advertising ID.</p>
+  </div>
+
+  <h2>1. Data we collect</h2>
+
+  <h3>Data we store ourselves</h3>
+  <p>When you first open the App, it signs you in <strong>anonymously</strong> through Firebase Authentication. No email address, password or social account is involved: the service simply issues a random identifier for your installation. Linked to that anonymous identifier, we store the following in Firebase Realtime Database:</p>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr><th>What we store</th><th>Why</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Anonymous user ID</strong></td><td>To recognise your installation across sessions</td></tr>
+      <tr><td><strong>Pending in-game rewards</strong> (coins to be credited)</td><td>To deliver rewards you have earned or been granted</td></tr>
+      <tr><td><strong>Push notification token</strong> (Firebase Cloud Messaging)</td><td>To send you game notifications, if you allow them</td></tr>
+      <tr><td><strong>Last-active timestamp and notification counter</strong></td><td>To avoid sending notifications to players who are currently in the game</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Your level progress, score and settings are stored <strong>only on your device</strong> and are not transmitted to us.</p>
+
+  <h3>Data collected by third-party services</h3>
+  <p>The App integrates the software development kits (SDKs) listed in section 2. These services may automatically collect:</p>
+  <ul>
+    <li><strong>Advertising ID</strong> (Google Advertising ID / AAID) — a resettable identifier assigned by your device</li>
+    <li><strong>Device identifiers and technical data</strong> — device model, operating system version, language, country, network type, and IP address</li>
+    <li><strong>App usage and performance data</strong> — app launches, sessions, levels completed, interactions with advertisements, and crash or diagnostic reports</li>
+    <li><strong>Installation data</strong> — the referrer information provided by Google Play when the App is installed</li>
+    <li><strong>In-app purchase data</strong> — the fact that a purchase was made and which item it relates to</li>
+  </ul>
+  <p>We never receive your payment details. Card and billing information is handled entirely by Google Play and is never visible to us.</p>
+  <p>The App does not collect your location, contacts, photos, files, camera, microphone, or any other personal content from your device.</p>
+
+  <h2>2. Third-party services</h2>
+  <p>The following providers process data as described above. Each operates under its own privacy policy, which we encourage you to read:</p>
+  <ul>
+    <li><strong>Google AdMob</strong> — displays interstitial and rewarded advertisements.
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> ·
+      <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google uses data</a></li>
+    <li><strong>Unity Ads</strong> — displays additional video advertisements.
+      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a></li>
+    <li><strong>Google Firebase</strong> (Authentication, Realtime Database, Cloud Messaging, Analytics, Remote Config) — anonymous accounts, reward delivery, push notifications, usage analytics and remote configuration.
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a></li>
+    <li><strong>AppsFlyer</strong> — measures app installations and attributes them to marketing sources.
+      <a href="https://www.appsflyer.com/legal/services-privacy-policy/" target="_blank" rel="noopener">AppsFlyer Privacy Policy</a></li>
+    <li><strong>Google Play Billing</strong> — processes in-app purchases.
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+  </ul>
+
+  <h2>3. Why this data is processed</h2>
+  <ul>
+    <li><strong>To operate core game features</strong>, such as crediting rewards and sending notifications you have opted into</li>
+    <li><strong>To display advertising</strong>, including personalised advertising where permitted, which allows us to offer the App free of charge</li>
+    <li><strong>To process in-app purchases</strong> and deliver the items you buy</li>
+    <li><strong>To measure installations and attribution</strong>, so we understand which marketing channels bring players to the App</li>
+    <li><strong>To analyse aggregate usage</strong>, so we can improve stability and gameplay</li>
+    <li><strong>To prevent fraud and abuse</strong> of the advertising and purchase systems</li>
+  </ul>
+  <p>Where the General Data Protection Regulation (GDPR) applies, processing for core game features and purchases is necessary for the <strong>performance of our agreement</strong> with you; advertising and analytics rely on your <strong>consent</strong>, which you may withdraw at any time (see section 5); fraud prevention relies on our <strong>legitimate interest</strong> in protecting the service.</p>
+
+  <h2>4. Data sharing and retention</h2>
+  <p>We do not sell your data. The information described above is shared only with the service providers named in section 2, who process it in accordance with their own policies and retention schedules. Data may be processed on servers located outside your country, including outside the European Economic Area; those transfers are governed by the safeguards adopted by each provider.</p>
+  <p>The data we store ourselves is kept for as long as the App remains installed and in use, and is deleted upon request as described in section 6.</p>
+
+  <h2>5. Your choices</h2>
+
+  <h3>Controlling advertising on your device</h3>
+  <p>You can reset or delete your advertising identifier at any time, which limits the ability of advertising services to build a profile:</p>
+  <ul>
+    <li>Open <strong>Settings</strong> on your Android device</li>
+    <li>Go to <strong>Google → Ads</strong> (the exact path varies by manufacturer)</li>
+    <li>Choose <strong>Reset advertising ID</strong> or <strong>Delete advertising ID</strong>, and enable <strong>Opt out of Ads Personalisation</strong> if you prefer non-personalised ads</li>
+  </ul>
+
+  <h3>Notifications</h3>
+  <p>Push notifications can be turned off at any time from your device settings, under <strong>Settings → Apps → Sweet Match Mania → Notifications</strong>.</p>
+
+  <p>Uninstalling the App stops all further data collection.</p>
+
+  <h2>6. Deleting your data</h2>
+  <p>You may ask us to delete the data associated with your anonymous account at any time. Write to <strong><a href="mailto:lynxis237@gmail.com">lynxis237@gmail.com</a></strong> with the subject <em>"Sweet Match Mania — data deletion"</em>, and we will erase your anonymous user record — including pending rewards, notification token and activity timestamps — within <strong>30 days</strong>.</p>
+  <p>Because the account is anonymous, please send your request from the device on which the App is installed, or include any information that helps us identify the record. Note that deletion also removes any rewards not yet credited.</p>
+
+  <h2>7. Rights under the GDPR</h2>
+  <p>If you are located in the European Economic Area or the United Kingdom, you have the right to request access to your data, its correction or erasure, restriction of or objection to processing, and data portability. You also have the right to lodge a complaint with your national data protection authority.</p>
+  <p>Requests concerning data collected by our advertising and analytics partners are best addressed directly to them using the links in section 2. For data we hold ourselves, contact us at the address in section 9.</p>
+
+  <h2>8. Children</h2>
+  <p>The App is not directed to children under the age of 13, and we do not knowingly collect data from them. If you believe a child has provided information through the App, please contact us and we will take appropriate action.</p>
+
+  <h2>9. Security and contact</h2>
+  <p>All data transmitted by the App is encrypted in transit using HTTPS. Please note that no method of transmission over the internet can be guaranteed to be completely secure.</p>
+  <p>For any question about this Privacy Policy or about how the App handles data, write to:</p>
+  <p><strong><a href="mailto:lynxis237@gmail.com">lynxis237@gmail.com</a></strong></p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>We may update this Privacy Policy to reflect changes to the App or to legal requirements. The revised version will be published on this page with a new "Last updated" date. Significant changes will be communicated through the App store listing.</p>
+
+  <footer>
+    <p>Sweet Match Mania is published by Smartech. This policy applies solely to the mobile application identified above.</p>
+  </footer>
+
+</main>
+</body>
+</html>
